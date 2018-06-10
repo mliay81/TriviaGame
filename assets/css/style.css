@@ -6,14 +6,17 @@ body {
 
 .card {
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 350px;
+    margin-bottom: 50px;
 }
 
-p, h5 {
-    font-family: 'Roboto', sans-serif;
+h5, h6 {
+    text-align: center;
+
+}
+
+.text {
     text-align: center;
 }
-
-
 
 
