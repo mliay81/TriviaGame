@@ -1,0 +1,19 @@
+body {
+    background-image: url("../images/firstave1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+p, h5 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+
