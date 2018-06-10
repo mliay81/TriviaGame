@@ -7,6 +7,12 @@ var incorrect = 0
 var unanswered = 0
 
 
+var interval = setInterval(function() {
+    timer--;
+    $("#timer").text("Time Remaining: " + timer);
+    if (timer === 0) clearInterval(interval);
+    if (timer == 0) alert("Time's up!")
+}, 1000);
 
 
 
@@ -17,7 +23,7 @@ questions = {
     q1: "Which Twin Cities band scored the one-hit wonder 'Surfin' Bird?'",
     q2: "Who was the original drummer for The Replacements?",
     q3: "Sean Tillmann also performed under what moniker, besides Har Mar Superstar?",
-    q4: "Craig Finn fronted which band before The Hold Stead?",
+    q4: "Craig Finn fronted which band before The Hold Steady?",
     q5: "In what Minnesota city was Bob Dylan born?",
     q6: "Prince's album Purple Rain was recorded live at which Minneapolis landmark?",
     q7: "Tony Zaccardi just purchased which long-standing Twin Cities dive bar?",
