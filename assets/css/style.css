@@ -2,6 +2,7 @@ body {
     background-image: url("../images/firstave1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
 }
 
 .card {
@@ -19,4 +20,12 @@ h5, h6 {
     text-align: center;
 }
 
+#begin {
+    margin-left: 273px;
+}
 
+/* #finish {
+    margin-top: 100px;
+    margin-left: 425px;
+    margin-bottom: 50px;
+} */

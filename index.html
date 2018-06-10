@@ -10,8 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
-              <div class="card" style="width: 700px;">
+        <div class="card" style="width: 700px;" id="start">
+                <div class="card-body">
+                  <h5 class="card-title">Minnesota Music Quiz!</h5>
+                  <br>
+                  <button id="begin">Start the quiz</button>
+                </div>
+        </div>
+              <div class="card" style="width: 700px;" id="quiz">
                     <div class="card-body">
                       <h5 class="card-title">Minnesota Music Quiz!</h5>
                       <h6 id="timer">Time Remaining: 120</h6>
@@ -20,16 +26,16 @@
                       <p>1. Which Twin Cities band scored the one-hit wonder "Surfin' Bird?"</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> Husker Du
+                            <input type="radio" name="optradio" class="answer incorrect"> Husker Du
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Time
+                            <input type="radio" name="optradio" class="incorrect"> The Time
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" class="correct"> The Trashmen
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Lizzo
+                            <input type="radio" name="optradio" class="incorrect"> Lizzo
                             </label>
                         </form>
                         <br>
@@ -39,26 +45,26 @@
                             <input type="radio" name="optradio" value="correct" class="correct"> Chris Mars
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Ringo Starr
+                            <input type="radio" name="optradio" class="incorrect"> Ringo Starr
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Bob Mould
+                            <input type="radio" name="optradio" class="incorrect"> Bob Mould
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> John Blackwell Jr.
+                            <input type="radio" name="optradio" class="incorrect"> John Blackwell Jr.
                             </label>
                         </form>
                         <br>
                         <p>3. Sean Tillmann also performed under what moniker, besides Har Mar Superstar?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> Night Moves
+                            <input type="radio" name="optradio" class="answer incorrect"> Night Moves
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Horrors
+                            <input type="radio" name="optradio" class="incorrect"> The Horrors
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Suburbs
+                            <input type="radio" name="optradio" class="incorrect"> The Suburbs
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> Sean Na Na
@@ -71,45 +77,45 @@
                             <input type="radio" name="optradio" class="answer correct" value="correct" id="correct"> Lftr Pllr
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Revolution
+                            <input type="radio" name="optradio" class="incorrect"> The Revolution
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Cut Copy
+                            <input type="radio" name="optradio" class="incorrect"> Cut Copy
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Koo Koo Kangaroo
+                            <input type="radio" name="optradio" class="incorrect"> Koo Koo Kangaroo
                             </label>
                         </form>
                         <br>
                         <p>5. In what Minnesota city was Bob Dylan born?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> Hibbing
+                            <input type="radio" name="optradio" class="answer incorrect"> Hibbing
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> St. Paul
+                            <input type="radio" name="optradio" class="incorrect"> St. Paul
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> Duluth
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Ely
+                            <input type="radio" name="optradio" class="incorrect"> Ely
                             </label>
                         </form>
                         <br>
                         <p>6. Prince's album Purple Rain was recorded live at which Minneapolis landmark?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> The Metrodome
+                            <input type="radio" name="optradio" class="answer incorrect"> The Metrodome
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> First Avenue
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Mall of America
+                            <input type="radio" name="optradio" class="incorrect"> The Mall of America
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Turf Club
+                            <input type="radio" name="optradio" class="incorrect"> The Turf Club
                             </label>
                         </form>
                         <br>
@@ -119,61 +125,61 @@
                             <input type="radio" name="optradio" class="answer correct" value="correct" id="correct"> Palmer's
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Grumpy's
+                            <input type="radio" name="optradio" class="incorrect"> Grumpy's
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> The Triple Rock
+                            <input type="radio" name="optradio" class="incorrect"> The Triple Rock
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Vegas Lounge
+                            <input type="radio" name="optradio" class="incorrect"> Vegas Lounge
                             </label>
                         </form>
                         <br>
                         <p>8. Which local 90's band took their name from the movie "It's A Wonderful Life?"?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> Soul Asylum
+                            <input type="radio" name="optradio" class="answer incorrect"> Soul Asylum
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Babes In Toyland
+                            <input type="radio" name="optradio" class="incorrect"> Babes In Toyland
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> Zuzu's Petals
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Dillinger Four
+                            <input type="radio" name="optradio" class="incorrect"> Dillinger Four
                             </label>
                         </form>
                         <br>
                         <p>9. What is the name of Morris Day's valet?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> Bobby Stinson
+                            <input type="radio" name="optradio" class="answer incorrect"> Bobby Stinson
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> Jerome Benton
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Dan Wilson
+                            <input type="radio" name="optradio" class="incorrect"> Dan Wilson
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Lori Barbero
+                            <input type="radio" name="optradio" class="incorrect"> Lori Barbero
                             </label>
                         </form>
                         <br>
                         <p>10. A new local hip hop group is named after which comic book villain?</p>
                         <form>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio" class="answer"> The Joker
+                            <input type="radio" name="optradio" class="answer incorrect"> The Joker
                             </label>
                             <label class="radio-inline">
                             <input type="radio" name="optradio" value="correct" id="correct" class="correct"> Shredder
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Kingpin
+                            <input type="radio" name="optradio" class="incorrect"> Kingpin
                             </label>
                             <label class="radio-inline">
-                            <input type="radio" name="optradio"> Lex Luthor
+                            <input type="radio" name="optradio" class="incorrect"> Lex Luthor
                             </label>
                         </form>
                         <br>
@@ -182,7 +188,14 @@
                     </div>
                   </div>
  
-                  
+        <div class="card" style="width: 700px;" id="finish">
+                <div class="card-body">
+                  <h5 class="card-title">Results!</h5>
+                  <h6 id="correct"></h6>
+                  <h6 id="incorrect"></h6>
+                  <h6 id="unanswered"></h6>
+                </div> 
+        </div>
 
 </body>
 </html>

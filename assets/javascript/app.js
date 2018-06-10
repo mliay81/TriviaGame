@@ -1,17 +1,36 @@
 $(document).ready(function() {
 
 
+
 var timer = 120
 var correct = 0
 var incorrect = 0
 var unanswered = 0
+
+// This all works, just need to make the clock start when you hit Start
+$("#start").show()
+$("#quiz").hide()
+$("#finish").hide()
+
+$("#begin").on("click", function() {
+    $("#quiz").show()
+    $("#start").hide()
+    interval;
+    timer = 120
+})
+// The above works
 
 // Working timer
 var interval = setInterval(function() {
     timer--;
     $("#timer").text("Time Remaining: " + timer);
     if (timer === 0) clearInterval(interval);
-    if (timer == 0) alert("Time's up!")
+    // if (timer == 0) alert("Time's up!")
+    if (timer === 0) {
+        $("#quiz").hide()
+        $("#finish").show()
+
+    }
 }, 1000);
 // Working timer
 
@@ -21,7 +40,14 @@ var interval = setInterval(function() {
           console.log("right");
       }
     });   
-  
+   
+    $(".incorrect").change(function(){
+        if ($(this).is(":checked")){
+            console.log("nope")
+        }
+    })
+
+
 
 
 
