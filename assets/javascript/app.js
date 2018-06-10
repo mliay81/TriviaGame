@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 
 
 var timer = 120
@@ -6,19 +6,30 @@ var correct = 0
 var incorrect = 0
 var unanswered = 0
 
-
+// Working timer
 var interval = setInterval(function() {
     timer--;
     $("#timer").text("Time Remaining: " + timer);
     if (timer === 0) clearInterval(interval);
     if (timer == 0) alert("Time's up!")
 }, 1000);
+// Working timer
+
+// I can at least console log the right answer
+    $('.correct').change(function(){
+      if($(this).is(':checked')){
+          console.log("right");
+      }
+    });   
+  
 
 
 
+      
+    
 
 
-
+// Q&A data
 questions = {
     q1: "Which Twin Cities band scored the one-hit wonder 'Surfin' Bird?'",
     q2: "Who was the original drummer for The Replacements?",
@@ -57,3 +68,7 @@ answers = {
     q9: "Jerome Benton",
     q10: "Shredder"
 }
+
+// Q&A data
+
+});
