@@ -34,10 +34,18 @@ var interval = setInterval(function() {
 }, 1000);
 // Working timer
 
+// This feels close
+// if ($(this) === ".correct") {
+//     correct++
+//     $("#correct").text("Here's what you got right: " + correct)
+// }
+
 // I can at least console log the right answer
-    $('.correct').change(function(){
+    $(".correct").change(function(){
       if($(this).is(':checked')){
-          console.log("right");
+          console.log("right")
+          correct++
+          $("#correct").html("Here's what you got right: " + this)
       }
     });   
    
