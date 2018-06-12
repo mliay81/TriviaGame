@@ -14,6 +14,7 @@ $("#quiz").hide()
 $("#finish").hide()
 $("#prince").hide()
 $("#harmar").hide()
+$("#themats").hide()
 
 $("#begin").on("click", function() {
     $("#quiz").show()
@@ -77,7 +78,12 @@ function endGame() {
         $("#harmar").show()
     }  
 
-    if (correct > 3 && correct <= 7) {
+    if (correct >= 5 && correct <= 7) {
+        $("#themats").show()
+    }
+
+
+    if (correct < 5) {
         $("#prince").show()
     }
 }
