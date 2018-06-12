@@ -63,7 +63,7 @@ $("#begin").on("click", function() {
     // }
 
 function endGame() {
-    clearInterval()
+    clearInterval(interval)
     var win = $("<p>")
     var lose = $("<p>")
     // var blank = $("<p>")
